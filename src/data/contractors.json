@@ -1,0 +1,42 @@
+[
+    {
+        "company": "Affordable Foundation Repair",
+        "phone": ["(855)749-1322"],
+        "address": "",
+        "email": "affordablefoundation101@gmail.com",
+        "website": "https://www.affordablefoundationrepair.net/tallahassee/",
+        "freeEstimate": true
+    },
+    {
+        "company": "APEX Foundation Specialists",
+        "phone": ["(850)999-4905", "(850)220-0863"],
+        "address": "271 N Star Avenue Unit G. Panama City. FL. 32404",
+        "email": "",
+        "website": "https://goapex.today/pages/contact",
+        "freeEstimate": false
+    },
+    {
+        "company": "Solid Foundations",
+        "phone": ["(855)227-0300", "(831)268-2100"],
+        "address": "1910 SW Main Blvd. Lake City. FL. 32025",
+        "email": "chad@solidfoundations.com",
+        "website": "https://www.solidfoundations.com/florida-service-areas/tallahassee-florida/",
+        "freeEstimate": true
+    },
+    {
+        "company": "Alpha Foundations",
+        "phone": ["(580)220-0857"],
+        "address": "",
+        "email": "",
+        "website": "https://www.alphafoundations.com/service-areas/tallahassee/",
+        "freeEstimate": true
+    },
+    {
+        "company": "Seminole Contracting LLC",
+        "phone": ["(850)544-4756"],
+        "address": "2713 Parramore Shores Rd, Tallahassee, FL 32310",
+        "email": "",
+        "website": "",
+        "freeEstimate": false
+    }
+]

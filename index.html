@@ -6,11 +6,41 @@
     </head>
     <body>
         <nav>
+            <img class="brand__img" src="<%= require('./src/assets/tools.svg') %>" />
             <span class="brand">Crawlspace Repairing Contractors</span>
         </nav>
         <main>
-            <ul data-bind="foreach: contractors">
-                <li data-bind="text:company"></li>
+            <ul id="contractors" data-bind="foreach: contractors">
+                <li class="card">
+                    <h3 class="card__title">
+                        <!-- ko if: freeEstimate-->
+                        <span title="Free estimate available">&starf;</span>
+                        <!-- /ko -->
+                        <!-- ko ifnot: freeEstimate -->
+                        <span title="Free estimate NOT available">&star;</span>
+                        <!-- /ko -->
+                        <!-- ko if: $data.website -->
+                        <a data-bind="attr: { href: $data.website}, text: company" target="_blank"></a>
+                        <!-- /ko -->
+                        <!-- ko ifnot: $data.website -->
+                        <span data-bind="text: company"></span>
+                        <!-- /ko -->
+                    </h3>
+                    <div data-bind="if: $data.email">
+                        <a data-bind="attr: {href: 'mailto:' + email}, text: email"></a>
+                    </div>
+                    <div data-bind="ifnot: $data.email">
+                        <div>No email address available</div>
+                    </div>
+                    <ul data-bind="foreach: phone">
+                        <li>
+                            <span class="material-symbols-outlined">
+                                call
+                            </span>
+                            <a data-bind="attr: {href: 'tel' + $data}, text: $data"></a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </main>
         <footer>

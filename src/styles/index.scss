@@ -1,4 +1,4 @@
-@import 'resets', 'typography';
+@import 'resets', 'typography', 'theme';
 
 html, body { height: 100vh; }
 body {
@@ -10,13 +10,37 @@ nav {
     border-bottom: thin solid;
     padding: 1em;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
-    span.brand {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    .brand {
         display: block;
         font-size: 1.2em;
+    }
+    .brand__img {
+        width: 50px;
     }
 }
 main {
     flex: 1 1 auto;
+}
+
+#contractors {
+    margin: 0 2em;
+    list-style: none;
+    &>li {
+        padding: 0.25em 0.5em;
+        border-radius: 10px;
+        border: none;
+    }
+    &>li:nth-child(2n) {
+        background-color: $clr-accent-1;
+    }
+    ul { list-style: none;}
+    a { 
+        text-decoration: none;
+        color: black;
+    }
 }
 footer {
     padding: 0.5em 1em;

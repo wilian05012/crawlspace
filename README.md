@@ -1,15 +1,10 @@
-# 🚀 Welcome to your new awesome project!
+# 🚀 Sample code for reading information from a local JSON file
 
-This project has been created using **webpack-cli**, you can now run
-
-```
-npm run build
-```
-
-or
+After cloning , please run
 
 ```
-yarn build
+npm install
+npm run build:prod
 ```
 
-to bundle your application
+that will create the **dist** directory with the generate static web page inside.
